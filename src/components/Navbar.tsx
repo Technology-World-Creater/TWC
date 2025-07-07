@@ -36,8 +36,8 @@ export default function Navbar() {
         <Link href="/companies" className="hover:text-yellow-300 transition">
           Our Companies
         </Link>
-        <Link href="/blogs" className="hover:text-yellow-300 transition">
-          Blogs
+        <Link href="/blog" className="hover:text-yellow-300 transition">
+          Blog
         </Link>
       </div>
       <Link
