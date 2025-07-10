@@ -95,7 +95,7 @@ export default function CompaniesPage() {
 
       {/* LET'S CONNECT SECTION */}
       <section className="w-full py-10 bg-gradient-to-b from-black via-[#18111a] to-black">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-10 items-center bg-[#18111a] rounded-2xl shadow-lg p-6 md:p-10">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row gap-10 items-center bg-[#18111a] rounded-2xl shadow-lg p-6 md:p-10">
           {/* Contact Form */}
           <div className="w-full md:w-1/2">
             <h3 className="text-2xl font-serif-hero text-[#F6E7B7] mb-6">LET’S CONNECT</h3>

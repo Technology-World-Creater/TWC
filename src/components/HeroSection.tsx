@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section
-      className={`w-full py-20 bg-gradient-to-b from-black via-[#18111a] to-black ${className}`}
+      className={`w-full py-20 md:py-40 bg-gradient-to-b from-black via-[#18111a] to-black ${className}`}
     >
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h1 className="text-6xl md:text-7xl font-serif-hero text-[#F6E7B7] font-bold mb-6">

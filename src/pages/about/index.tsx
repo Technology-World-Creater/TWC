@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="w-full">
               <div className="relative overflow-visible flex flex-col md:flex-row justify-between items-start bg-gradient-to-r from-[#2a183a] to-[#18111a] rounded-t-2xl shadow-lg p-6 md:p-8 border border-[#3a235a] w-full gap-6">
                 {/* Image - on left, absolutely positioned on desktop, static on mobile */}
-                <div className="block md:hidden w-full flex justify-center mb-6">
+                <div className="md:hidden w-full flex justify-center mb-6">
                   <Image
                     src="/images/sahil.png"
                     alt="Sahil R. Vaidya"
@@ -250,7 +250,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/companies"
-            className="inline-block border border-yellow-300 text-yellow-300 px-8 py-3 rounded-full hover:bg-yellow-300 hover:text-black transition font-semibold text-lg md:text-xl"
+            className="inline-block border border-[#F6E7B7] text-[#F6E7B7] px-8 py-3 rounded-full hover:bg-[#F6E7B7] hover:text-black transition font-semibold text-lg md:text-xl"
           >
             Explore Our companies
           </Link>

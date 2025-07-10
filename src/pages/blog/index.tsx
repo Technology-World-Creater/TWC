@@ -8,7 +8,7 @@ export default function BlogPage() {
         <span className="text-7xl md:text-8xl animate-bounce">👨‍💻</span>
         {/* If you have a developer illustration, you can use it here instead of the emoji: */}
         {/* <Image src="/images/developer-working.png" alt="Developer Working" width={220} height={180} /> */}
-        <h1 className="text-4xl md:text-5xl font-serif-hero text-yellow-300 font-bold text-center mb-2">
+        <h1 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold text-center mb-2">
           Blog Coming Soon!
         </h1>
         <p className="text-lg md:text-xl text-gray-300 text-center max-w-xl">

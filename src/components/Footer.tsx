@@ -64,16 +64,16 @@ export default function Footer() {
             Back to Top
           </button>
           <div className="flex gap-4 text-xl">
-            <a href="#" aria-label="X" className="hover:text-yellow-300">
+            <a href="#" aria-label="X" className="hover:text-[#F6E7B7]">
               <LucideX size={22} />
             </a>
-            <a href="#" aria-label="Instagram" className="hover:text-yellow-300">
+            <a href="#" aria-label="Instagram" className="hover:text-[#F6E7B7]">
               <Instagram size={22} />
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-yellow-300">
+            <a href="#" aria-label="LinkedIn" className="hover:text-[#F6E7B7]">
               <Linkedin size={22} />
             </a>
-            <a href="#" aria-label="YouTube" className="hover:text-yellow-300">
+            <a href="#" aria-label="YouTube" className="hover:text-[#F6E7B7]">
               <Youtube size={22} />
             </a>
           </div>
