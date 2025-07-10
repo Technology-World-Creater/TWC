@@ -1,22 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
+import HeroSection from '../../components/HeroSection';
 
 export default function AboutPage() {
   return (
     <div className="bg-black text-white min-h-screen w-full">
       {/* HERO SECTION */}
-      <section className="w-full py-20 bg-gradient-to-b from-black via-[#18111a] to-black">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1 className="text-6xl md:text-7xl font-serif-hero text-[#F6E7B7] font-bold mb-6">
-            About Us
-          </h1>
-          <p className="max-w-3xl mx-auto text-base md:text-lg font-body text-gray-200 font-normal tracking-wide">
-            At TWC, we don’t just analyze trends we create them. We believe that when technology,
-            data, and human insight come together, businesses scale smarter, industries grow faster,
-            and people’s lives truly improve.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="About Us"
+        description="At TWC, we don’t just analyze trends we create them. We believe that when technology, data, and human insight come together, businesses scale smarter, industries grow faster, and people’s lives truly improve."
+      />
 
       {/* WHAT WE DO SECTION */}
       <section className="w-full py-16 bg-black">
