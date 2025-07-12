@@ -19,49 +19,66 @@ export default function Navbar() {
     href === '/' ? router.pathname === '/' : router.pathname.startsWith(href);
 
   return (
-    <nav className="w-full bg-black text-white px-4 md:px-8 py-3 flex items-center justify-between relative z-20">
-      {/* Logo */}
-      <Link
-        href="/"
-        className="flex items-center justify-center h-20 w-1/2 md:h-16 md:w-60 p-1 md:p-0"
-      >
-        <Image
-          src="/images/logo.png"
-          alt="Logo"
-          width={1000}
-          height={1000}
-          className="object-contain h-8 w-auto md:h-16 md:w-full"
-          priority
-        />
-      </Link>
-
-      {/* Desktop Nav */}
-      <div className="hidden md:flex items-center gap-10">
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={`hover:text-[#F6E7B7] transition ${isActive(link.href) ? 'text-[#F6E7B7] font-bold' : ''}`}
-          >
-            {link.label}
-          </Link>
-        ))}
+    <nav
+      className="w-full bg-black text-white py-3 relative z-20 sticky top-0"
+      style={{ background: '#000' }}
+    >
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-0">
+        {/* Logo */}
         <Link
-          href="/contact"
-          className={`bg-yellow-300 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition ml-4 ${router.pathname.startsWith('/contact') ? 'ring-2 ring-yellow-300' : ''}`}
+          href="/"
+          className="flex items-center justify-center h-20 w-1/2 md:h-16 md:w-60 p-1 md:p-0"
         >
-          Contact Us
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={1000}
+            height={1000}
+            className="object-contain h-8 w-auto md:h-16 md:w-full"
+            priority
+          />
         </Link>
-      </div>
 
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden flex items-center justify-center p-2"
-        onClick={() => setMenuOpen((v) => !v)}
-        aria-label="Toggle menu"
-      >
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center justify-end gap-10">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`px-6 py-2 rounded-full transition font-semibold
+                ${
+                  isActive(link.href)
+                    ? 'bg-white text-black font-bold'
+                    : 'text-white hover:bg-white hover:text-black'
+                }
+              `}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            className={`border-2 border-[#F6E7B7] text-[#F6E7B7] font-bold px-6 py-2 rounded-full transition ml-4
+              ${
+                router.pathname.startsWith('/contact')
+                  ? 'bg-[#F6E7B7] text-black'
+                  : 'hover:bg-[#F6E7B7] hover:text-black'
+              }
+            `}
+          >
+            Contact Us
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden flex items-center justify-center p-2"
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
 
       {/* Mobile Nav */}
       <div
