@@ -68,9 +68,12 @@ export default function AboutPage() {
                   </span>
                 </li>
               </ul>
-              <button className="border border-[#F6E7B7] text-[#F6E7B7] px-7 py-2 rounded-lg font-body text-lg font-medium hover:bg-[#F6E7B7] hover:text-black transition-all duration-200">
+              <Link
+                href="/companies"
+                className="border border-[#F6E7B7] text-[#F6E7B7] px-7 py-2 rounded-lg font-body text-center text-lg font-medium hover:bg-[#F6E7B7] hover:text-black transition-all duration-200"
+              >
                 Know more
-              </button>
+              </Link>
             </div>
           </div>
         </div>

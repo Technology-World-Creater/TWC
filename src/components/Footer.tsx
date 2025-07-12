@@ -5,8 +5,8 @@ import { Instagram, Linkedin, Youtube, X as LucideX } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white px-4 md:px-8 py-10 mt-16">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-0">
+    <footer className="w-full bg-black text-white py-10 mt-16">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-0 px-4 md:px-0">
         <div className="flex flex-col gap-4 w-full md:w-auto items-center md:items-start">
           <Link
             href="/"
@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="flex flex-col gap-1 text-sm text-gray-400 text-center md:text-left">
             <div className="flex items-center gap-2 justify-center md:justify-start">
               <span>📍</span>
-              <span>Dighori, Nagpur Maharashtra - 440034</span>
+              <span>Narendra Nagar, Nagpur Maharashtra - 440015</span>
             </div>
             <div className="flex items-center gap-2 justify-center md:justify-start">
               <span>✉️</span>

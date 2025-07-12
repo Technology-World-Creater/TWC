@@ -14,7 +14,7 @@ const companies = [
     image: '/images/company1.png',
     imageAlt: 'TAC Marketplace',
     ctaText: 'Visit',
-    ctaHref: '#',
+    ctaHref: 'https://technologyagriculturecreater.com/',
   },
   {
     logo: '/images/logo2.png',

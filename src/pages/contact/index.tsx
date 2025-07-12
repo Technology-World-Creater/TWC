@@ -31,7 +31,7 @@ export default function ContactPage() {
               <Phone className="text-green-400" size={28} />
             </span>
             <div className="text-left">
-              <div className="font-bold font-body text-lg text-white">+91 9876543210</div>
+              <div className="font-bold font-body text-lg text-white">+91 9373133010</div>
             </div>
           </div>
           {/* Email */}
