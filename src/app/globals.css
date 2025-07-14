@@ -65,3 +65,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+
+/* Utility: Hide scrollbars in all browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

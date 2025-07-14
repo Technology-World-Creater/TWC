@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../../components/HeroSection';
-import { Mail, MapPin, Phone, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, MapPin, Phone, Instagram, Facebook, LucideX } from 'lucide-react';
 import Image from 'next/image';
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
               <MapPin className="text-red-400" size={28} />
             </span>
             <div className="text-left">
-              <div className="font-bold font-body text-lg text-white">
+              <div className="font-semibold font-body text-xl  text-white">
                 NARENDRA NAGAR, NAGPUR-MH
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function ContactPage() {
               <Phone className="text-green-400" size={28} />
             </span>
             <div className="text-left">
-              <div className="font-bold font-body text-lg text-white">+91 9373133010</div>
+              <div className="font-semibold font-body text-xl  text-white">+91 9373133010</div>
             </div>
           </div>
           {/* Email */}
@@ -40,7 +40,7 @@ export default function ContactPage() {
               <Mail className="text-blue-400" size={28} />
             </span>
             <div className="text-left break-all">
-              <div className="font-bold font-body text-lg text-white">
+              <div className="font-semibold font-body text-xl  text-white">
                 support@
                 <wbr />
                 technologyworldcreater.com
@@ -51,7 +51,7 @@ export default function ContactPage() {
       </div>
 
       {/* JOIN US SECTION */}
-      <section className="w-full py-14 bg-black">
+      <section className="w-full py-14 mt-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4 uppercase tracking-wide">
             JOIN US IN BUILDING THE FUTURE
@@ -74,12 +74,12 @@ export default function ContactPage() {
               <div className="flex flex-col sm:flex-row gap-3 w-full">
                 <input
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="First Name"
                   className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
                 />
                 <input
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Last Name"
                   className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
                 />
               </div>
@@ -110,15 +110,21 @@ export default function ContactPage() {
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6 mt-10 md:mt-0">
             <Image src="/images/logo.png" alt="TWC Logo" width={480} height={80} className="mb-2" />
 
-            <div className="flex gap-4 mt-2">
-              <a href="#" aria-label="Instagram" className="hover:text-pink-400">
-                <Instagram size={32} />
+            <div className="flex items-center gap-4 md:gap-6">
+              <a href="#" className="hover:scale-110 transition" aria-label="Instagram">
+                <span className="inline-block rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-2 md:p-3">
+                  <Instagram size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
+                </span>
               </a>
-              <a href="#" aria-label="Facebook" className="hover:text-blue-400">
-                <Facebook size={32} />
+              <a href="#" className="hover:scale-110 transition" aria-label="Facebook">
+                <span className="inline-block rounded-full bg-[#1877F3] p-2 md:p-3">
+                  <Facebook size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
+                </span>
               </a>
-              <a href="#" aria-label="X" className="hover:text-green-400">
-                <Twitter size={32} />
+              <a href="#" className="hover:scale-110 transition" aria-label="X">
+                <span className="inline-block rounded-full bg-black p-2 md:p-3">
+                  <LucideX size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
+                </span>
               </a>
             </div>
           </div>

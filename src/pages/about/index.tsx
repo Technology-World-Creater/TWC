@@ -16,16 +16,16 @@ export default function AboutPage() {
       <section className="w-full py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center flex-col md:flex-row gap-10 bg-[#131015] rounded-2xl shadow-lg p-6 md:p-10">
-            <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center h-64 md:h-[420px]">
+            <div className="w-full md:w-[40%] flex-shrink-0 flex items-center justify-center h-64 md:h-[420px]">
               <Image
                 src="/images/about-1.jpg"
                 alt="What We Do"
                 width={800}
                 height={420}
-                className="rounded-xl object-cover w-full h-full shadow-lg border border-[#222]"
+                className="rounded-xl object-cover w-full h-full opacity-70 shadow-lg border border-[#222]"
               />
             </div>
-            <div className="w-full md:w-1/2 flex-1 flex flex-col justify-center">
+            <div className="w-full md:w-[60%] flex-1 flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-section-heading text-[#F6E7B7] mb-4">
                 WHAT WE DO
               </h2>
@@ -39,30 +39,28 @@ export default function AboutPage() {
               </p>
               <ul className="mb-6 space-y-1 text-sm md:text-base">
                 <li>
-                  <span className="text-green-400">✔</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">
-                    Technology Agriculture Creater
-                  </span>{' '}
+                  <span className="">✅</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Agriculture Creater</span>{' '}
                   <span className="text-gray-300">— powering fair, transparent agri-trade</span>
                 </li>
                 <li>
-                  <span className="text-green-400">✔</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Service Creater</span>{' '}
+                  <span className="">✅</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Service Creater</span>{' '}
                   <span className="text-gray-300">— delivering smart digital solutions</span>
                 </li>
                 <li>
-                  <span className="text-green-400">✔</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Property Creater</span>{' '}
+                  <span className="">✅</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Property Creater</span>{' '}
                   <span className="text-gray-300">— making property buying & selling seamless</span>
                 </li>
                 <li>
-                  <span className="text-green-400">✔</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Education Creater</span>{' '}
+                  <span className="">✅</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Education Creater</span>{' '}
                   <span className="text-gray-300">— shaping tomorrow’s learners</span>
                 </li>
                 <li>
-                  <span className="text-green-400">✔</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Skills Creater</span>{' '}
+                  <span className="">✅</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Skills Creater</span>{' '}
                   <span className="text-gray-300">
                     — equipping people with practical, job-ready skills
                   </span>
@@ -96,10 +94,12 @@ export default function AboutPage() {
                     height={60}
                     className="mx-auto md:mx-0"
                   />
-                  <div className="text-xl md:text-4xl font-bold text-white text-end md:text-right leading-tight">
+                  <div className="text-xl md:text-4xl font-bold font-mono tracking-normal text-white text-end md:text-right leading-tight">
                     Founder & CEO,
                     <br />
-                    <span className="text-[#F6E7B7]">Technology World Creater Org.</span>
+                    <span className="text-[#F6E7B7] text-2xl font-mono tracking-normal capitalize">
+                      Technology World Creater Org.
+                    </span>
                   </div>
                 </div>
               </h2>
@@ -107,7 +107,7 @@ export default function AboutPage() {
 
             {/* Gradient Card: Image + Description */}
             <div className="w-full">
-              <div className="relative overflow-visible flex flex-col md:flex-row justify-between items-start bg-gradient-to-r from-[#2a183a] to-[#18111a] rounded-t-2xl shadow-lg p-6 md:p-8 border border-[#3a235a] w-full gap-6">
+              <div className="relative overflow-visible flex flex-col md:flex-row justify-between items-start bg-gradient-to-r from-[#21022E] via-[#230F3C] to-[#0E040B] rounded-t-[3em] shadow-lg p-6 md:p-8 border border-[#3a235a] w-full gap-6">
                 {/* Image - on left, absolutely positioned on desktop, static on mobile */}
                 <div className="md:hidden w-full flex justify-center mb-6">
                   <Image
@@ -119,19 +119,19 @@ export default function AboutPage() {
                     priority
                   />
                 </div>
-                <div className="hidden md:block absolute -bottom-[0%] left-0 z-10">
+                <div className="hidden md:block absolute -bottom-[0%] left-10 z-10">
                   <Image
                     src="/images/sahil.png"
                     alt="Sahil R. Vaidya"
                     width={740}
                     height={1040}
-                    className="rounded-xl object-cover max-w-sm w-full h-[30em]"
+                    className="rounded-xl object-cover max-w-sm w-full h-[33em]"
                     priority
                   />
                 </div>
                 {/* Description - on right */}
-                <div className="w-full md:ml-auto md:w-1/2 text-end z-20">
-                  <p className="text-white text-base md:text-lg text-center md:text-left leading-relaxed">
+                <div className="w-full md:ml-auto md:w-[65%] text-end z-20 flex items-center justify-center h-40">
+                  <p className="text-white text-base md:text-xl text-center md:text-center leading-loose">
                     As CEO and Founder of TWC, I lead a multinational technology analysenment
                     company committed to{' '}
                     <span className="text-[#F6E7B7] font-semibold">bridging industries</span> and{' '}
@@ -164,7 +164,7 @@ export default function AboutPage() {
                 className="mb-4"
               />
             </div>
-            <hr className="w-full border-t border-gray-500 mb-6" />
+            <hr className="w-full border-t border-gray-700 mb-6" />
             <p className="text-gray-200 font-body text-lg md:text-xl w-full">
               To lead the global technology revolution by delivering cutting-edge, sector-specific
               innovations that combine deep analysis with real-world solutions. Through our unique
@@ -187,7 +187,7 @@ export default function AboutPage() {
                 OUR MISSION
               </h2>
             </div>
-            <hr className="w-full border-t border-gray-500 mb-6" />
+            <hr className="w-full border-t border-gray-700 mb-6" />
             <p className="text-gray-200 font-body text-lg md:text-xl w-full">
               Founded on 2nd February 2020, Technology World Creater (TWC) is dedicated to building
               innovative, analysis-driven platforms that create meaningful impact across diverse
@@ -212,7 +212,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex-1 flex flex-col items-center md:items-end gap-2">
-            <h2 className="text-3xl md:text-5xl font-serif-hero text-white font-bold mb-2 text-center md:text-right">
+            <h2 className="text-3xl md:text-7xl font-serif-hero text-white font-bold mb-2 text-center md:text-right">
               OUR TEAM
             </h2>
             <div className="flex items-center gap-2 mb-2">
@@ -225,14 +225,39 @@ export default function AboutPage() {
             <Image
               src="/images/team.png"
               alt="Our Team"
-              width={900}
+              width={1200}
               height={300}
-              className="object-contain w-full max-w-4xl rounded-lg z-10"
+              className="object-contain w-full rounded-lg z-10"
             />
             <div
               className="absolute bottom-0 left-0 w-full h-8 md:h-12 bg-gradient-to-t from-yellow-200/80 to-transparent rounded-b-lg z-0"
               style={{ filter: 'blur(2px)' }}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* SUCCESS STORIES SECTION */}
+      <section className="w-full py-16 bg-gradient-to-r from-[#21022E] via-[#230F3C] to-[#0E040B] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-8">
+          <h2 className="text-4xl md:text-6xl font-serif-hero text-[#F6E7B7] font-bold mb-4 text-center drop-shadow-lg">
+            SUCCESS STORIES
+          </h2>
+          <p className="text-gray-200 font-body text-lg md:text-2xl mb-8 text-center max-w-3xl">
+            Discover how TWC has empowered businesses and individuals to achieve extraordinary
+            results. Our success stories showcase the impact of innovation, technology, and
+            strategic insight across diverse industries.
+          </p>
+          <div className="relative w-full flex justify-center">
+            <Image
+              src="/images/about-1.jpg"
+              alt="Success Story"
+              width={1200}
+              height={400}
+              className="rounded-2xl object-cover w-full max-w-4xl shadow-2xl border-4 border-[#F6E7B7] opacity-90"
+            />
+            {/* Optional: Add a gradient overlay for effect */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl pointer-events-none" />
           </div>
         </div>
       </section>
@@ -243,7 +268,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-6xl font-serif-hero text-[#F6E7B7] font-bold mb-4">
             OUR PROMISE
           </h2>
-          <p className="text-gray-200 py-6 text-base md:text-lg w-full text-center md:text-center">
+          <p className="text-gray-200 py-6 text-base md:text-xl w-full text-center md:text-center">
             No matter who you are — a startup founder, a small farmer, a property buyer, a student,
             or an enterprise, we’re here to help you grow smarter, scale bigger, and innovate beyond
             limits.
