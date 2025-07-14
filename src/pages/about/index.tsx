@@ -237,6 +237,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* SUCCESS STORIES SECTION */}
+      <section className="w-full py-16 bg-gradient-to-r from-[#21022E] via-[#230F3C] to-[#0E040B] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-8">
+          <h2 className="text-4xl md:text-6xl font-serif-hero text-[#F6E7B7] font-bold mb-4 text-center drop-shadow-lg">
+            SUCCESS STORIES
+          </h2>
+          <p className="text-gray-200 font-body text-lg md:text-2xl mb-8 text-center max-w-3xl">
+            Discover how TWC has empowered businesses and individuals to achieve extraordinary
+            results. Our success stories showcase the impact of innovation, technology, and
+            strategic insight across diverse industries.
+          </p>
+          <div className="relative w-full flex justify-center">
+            <Image
+              src="/images/about-1.jpg"
+              alt="Success Story"
+              width={1200}
+              height={400}
+              className="rounded-2xl object-cover w-full max-w-4xl shadow-2xl border-4 border-[#F6E7B7] opacity-90"
+            />
+            {/* Optional: Add a gradient overlay for effect */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl pointer-events-none" />
+          </div>
+        </div>
+      </section>
+
       {/* PROMISE SECTION */}
       <section className="w-full py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

@@ -5,10 +5,6 @@ import {
   Instagram,
   Facebook,
   X as LucideX,
-  Eye,
-  Brain,
-  Rocket,
-  Layers3,
   PlayCircle,
   ArrowLeftCircle,
   ArrowRightCircle,
@@ -148,6 +144,34 @@ export default function HomePage() {
     <div className="relative min-h-screen w-full font-body">
       {/* HERO BACKGROUND - fixed, visuals only */}
       <section className="sticky top-0 h-screen w-full bg-gradient-to-b from-black via-[#18111a] to-black z-0 overflow-hidden pointer-events-none select-none">
+        {/* HERO VIDEO BACKGROUND */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ pointerEvents: 'none' }}
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        {/* HERO BACKGROUND IMAGES */}
+        <div className="absolute inset-0 z-10 pointer-events-none select-none">
+          <Image
+            src="/images/herobackground.png"
+            alt="Hero Background 1"
+            fill
+            className="object-cover opacity-80"
+            priority
+          />
+          <Image
+            src="/images/TWC.png"
+            alt="TWC Logo Background Layer"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 z-0 opacity-10 flex items-center justify-center">
           <span className="text-[16vw] font-extrabold font-serif-hero text-white/10 tracking-tighter select-none">
             TWC
@@ -169,16 +193,16 @@ export default function HomePage() {
             <h1 className="text-5xl md:text-7xl font-serif-hero text-[#F6E7B7] font-bold mb-2 leading-tight">
               India&apos;s Only Multinational
             </h1>
-            <h2 className="text-2xl md:text-3xl font-body font-semibold text-white mb-4 tracking-wide uppercase">
+            <h2 className="text-2xl md:text-[2.7em] font-body font-semibold text-white mb-4 tracking-wide uppercase">
               TECHNOLOGY ANALYSEMENT COMPANY
             </h2>
-            <p className="text-lg md:text-xl text-gray-200 mb-6 font-body max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 mb-6 font-body max-w-4xl mx-auto">
               We are a multinational technology analysment company helping businesses, startups, and
               emerging markets unlock their full potential.
             </p>
             <Link
               href="/about"
-              className="inline-block border border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition mt-2"
+              className="inline-block border border-white text-white px-8 py-3 rounded-lg underline text-lg font-semibold hover:bg-white hover:text-black transition mt-2"
             >
               Explore
             </Link>
@@ -189,7 +213,7 @@ export default function HomePage() {
       <div className="relative z-10">
         <main className="flex-grow">
           {/* SOCIAL + TWC BAR - Overlapping section */}
-          <section className="relative w-full py-6 md:py-8 bg-black/90 backdrop-blur-sm border border-white/10 mt-8 z-20 -mt-32">
+          <section className="relative w-full py-6 md:py-8 bg-black/90 backdrop-blur-sm border border-white/10 z-20 -mt-32">
             <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-2xl px-6">
               {/* Left: TWC, tagline, description */}
               <div className="flex-1 flex flex-col items-start justify-center text-left gap-2 min-w-[300px]">
@@ -367,7 +391,7 @@ export default function HomePage() {
               <div className="flex justify-center">
                 <Link
                   href="/companies"
-                  className="inline-block border border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition mt-2"
+                  className="inline-block border border-white text-white px-8 py-3 rounded-lg underline text-lg font-semibold hover:bg-white/30 hover:text-white transition mt-2"
                 >
                   Know More
                 </Link>
@@ -377,7 +401,7 @@ export default function HomePage() {
 
           {/* WHY CHOOSE US - Overlapping section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-8">
                 WHY CHOOSE US?
               </h2>
@@ -385,7 +409,13 @@ export default function HomePage() {
                 {/* Card 1 */}
                 <div className="relative rounded-2xl overflow-hidden p-[2px]">
                   <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6">
-                    <Eye size={40} className="text-yellow-400 mb-2" />
+                    <Image
+                      src="/images/eye.png"
+                      width={48}
+                      height={48}
+                      alt="Eye Icon"
+                      className="mb-3"
+                    />
                     <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1">
                       Multinational Vision, Local Execution
                     </div>
@@ -399,12 +429,18 @@ export default function HomePage() {
                 </div>
                 {/* Card 2 */}
                 <div className="relative rounded-2xl overflow-hidden p-[2px]">
-                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6">
-                    <Brain size={40} className="text-yellow-300 mb-2" />
-                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1">
+                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6 flex flex-col items-start">
+                    <Image
+                      src="/images/brain.png"
+                      width={48}
+                      height={48}
+                      alt="Brain Icon"
+                      className="mb-3"
+                    />
+                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1 text-start">
                       Data-Driven Strategic Intelligence
                     </div>
-                    <div className="text-gray-300 text-base">
+                    <div className="text-gray-300 text-base text-start">
                       Every decision we make is backed by deep data analysis and market insight. We
                       turn raw data into actionable strategies that help businesses stay ahead of
                       trends and competition.
@@ -414,12 +450,18 @@ export default function HomePage() {
                 </div>
                 {/* Card 3 */}
                 <div className="relative rounded-2xl overflow-hidden p-[2px]">
-                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6">
-                    <Rocket size={40} className="text-green-400 mb-2" />
-                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1">
+                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6 flex flex-col items-start">
+                    <Image
+                      src="/images/roket.png"
+                      width={48}
+                      height={48}
+                      alt="Rocket Icon"
+                      className="mb-3"
+                    />
+                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1 text-start">
                       Startup Accelerator Mindset
                     </div>
-                    <div className="text-gray-300 text-base">
+                    <div className="text-gray-300 text-base text-start">
                       Unlike traditional consultancies, we work hands-on with early-stage startups
                       and business ideas—helping them evolve from concept to market with speed,
                       clarity, and innovation.
@@ -429,12 +471,18 @@ export default function HomePage() {
                 </div>
                 {/* Card 4 */}
                 <div className="relative rounded-2xl overflow-hidden p-[2px]">
-                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6">
-                    <Layers3 size={40} className="text-gray-300 mb-2" />
-                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1">
+                  <div className="why-card-animate border-none rounded-2xl h-full w-full bg-[#18111a]/80 backdrop-blur-sm p-6 flex flex-col items-start">
+                    <Image
+                      src="/images/expert.png"
+                      width={48}
+                      height={48}
+                      alt="Expert Icon"
+                      className="mb-3"
+                    />
+                    <div className="text-lg md:text-xl font-bold text-[#F6E7B7] mb-1 text-start">
                       Cross-Industry Technological Expertise
                     </div>
-                    <div className="text-gray-300 text-base">
+                    <div className="text-gray-300 text-base text-start">
                       From Agri-Tech and FinTech to Edu-Tech and beyond, our team brings
                       domain-specific expertise and tech foresight to every challenge making us
                       versatile, adaptable, and forward-thinking.
@@ -570,10 +618,7 @@ export default function HomePage() {
                               onClick={() => setPlayingIndex(idx)}
                               aria-label="Play video"
                             >
-                              <PlayCircle
-                                size={64}
-                                className="text-[#F6E7B7] drop-shadow-lg mb-2"
-                              />
+                              <PlayCircle size={64} className="text-white drop-shadow-lg mb-2" />
                               <span className="text-white text-lg font-bold">Play</span>
                             </button>
                           </>
@@ -590,7 +635,7 @@ export default function HomePage() {
               <div className="flex justify-between items-center mt-4">
                 <Link
                   href="/companies"
-                  className="border border-[#F6E7B7] text-[#F6E7B7] px-6 py-2 rounded-full hover:bg-[#F6E7B7] hover:text-black transition font-semibold text-base"
+                  className="border border-white text-white px-6 py-2 rounded-lg hover:bg-white/30 hover:text-white transition font-semibold text-base"
                 >
                   Explore all
                 </Link>
@@ -601,7 +646,7 @@ export default function HomePage() {
                     className="hover:scale-110 transition flex-shrink-0 mr-4"
                     style={{ height: '100%' }}
                   >
-                    <ArrowLeftCircle size={48} className="text-[#F6E7B7]" />
+                    <ArrowLeftCircle size={48} className="text-white" />
                   </button>
                   <button
                     onClick={() => scrollByCard('right')}
@@ -609,7 +654,7 @@ export default function HomePage() {
                     className="hover:scale-110 transition flex-shrink-0 ml-4"
                     style={{ height: '100%' }}
                   >
-                    <ArrowRightCircle size={48} className="text-[#F6E7B7]" />
+                    <ArrowRightCircle size={48} className="text-white" />
                   </button>
                 </div>
               </div>
@@ -642,6 +687,39 @@ export default function HomePage() {
                       <div className="text-gray-400 text-sm">{t.author}</div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CONTACT ACTIONS SECTION */}
+          <section className="w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20 rounded-2xl">
+            <div className="max-w-7xl mx-auto flex flex-col items-center">
+              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4 text-center">
+                HAVE A BOLD IDEA? <span className="text-white">LET’S MAKE IT REAL.</span>
+              </h2>
+              <p className="text-gray-200 text-lg md:text-xl mb-10 text-center max-w-3xl">
+                Whether you&apos;re a startup looking for direction, a business seeking smarter
+                strategy, or a partner ready to scale innovation, we&apos;re here to make it happen.
+                Reach out and let&apos;s build something extraordinary together.
+              </p>
+              <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-8 mb-8">
+                {/* Let's Talk Card */}
+                <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
+                  <span className="text-6xl mb-4">💬</span>
+                  <span className="text-2xl font-bold text-white mb-2">Let’s Talk</span>
+                </div>
+                {/* Schedule a Consultation Card */}
+                <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
+                  <span className="text-6xl mb-4">🧑‍💼</span>
+                  <span className="text-2xl font-bold text-white mb-2">
+                    Schedule a Consultation
+                  </span>
+                </div>
+                {/* Partner With Us Card */}
+                <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
+                  <span className="text-6xl mb-4">🤝</span>
+                  <span className="text-2xl font-bold text-white mb-2">Partner With Us</span>
                 </div>
               </div>
             </div>

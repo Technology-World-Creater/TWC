@@ -20,10 +20,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-full bg-black text-white py-3 relative z-20 sticky top-0"
+      className="w-full bg-black text-white py-3 z-20 sticky top-0"
       style={{ background: '#000' }}
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-0">
+      <div className="w-[80%] mx-auto flex items-center justify-between px-4 md:px-0">
         {/* Logo */}
         <Link
           href="/"
@@ -45,11 +45,11 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`px-6 py-2 rounded-full transition font-semibold
+              className={`px-8 py-2 rounded-full transition font-semibold
                 ${
                   isActive(link.href)
                     ? 'bg-white text-black font-bold'
-                    : 'text-white hover:bg-white hover:text-black'
+                    : 'text-white hover:bg-white/30 hover:border-[1px] hover:border-white hover:text-white'
                 }
               `}
             >
