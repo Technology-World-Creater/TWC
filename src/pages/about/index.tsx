@@ -16,16 +16,16 @@ export default function AboutPage() {
       <section className="w-full py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center flex-col md:flex-row gap-10 bg-[#131015] rounded-2xl shadow-lg p-6 md:p-10">
-            <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center h-64 md:h-[420px]">
+            <div className="w-full md:w-[40%] flex-shrink-0 flex items-center justify-center h-64 md:h-[420px]">
               <Image
                 src="/images/about-1.jpg"
                 alt="What We Do"
                 width={800}
                 height={420}
-                className="rounded-xl object-cover w-full h-full shadow-lg border border-[#222]"
+                className="rounded-xl object-cover w-full h-full opacity-70 shadow-lg border border-[#222]"
               />
             </div>
-            <div className="w-full md:w-1/2 flex-1 flex flex-col justify-center">
+            <div className="w-full md:w-[60%] flex-1 flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-section-heading text-[#F6E7B7] mb-4">
                 WHAT WE DO
               </h2>
@@ -40,29 +40,27 @@ export default function AboutPage() {
               <ul className="mb-6 space-y-1 text-sm md:text-base">
                 <li>
                   <span className="">✅</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">
-                    Technology Agriculture Creater
-                  </span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Agriculture Creater</span>{' '}
                   <span className="text-gray-300">— powering fair, transparent agri-trade</span>
                 </li>
                 <li>
                   <span className="">✅</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Service Creater</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Service Creater</span>{' '}
                   <span className="text-gray-300">— delivering smart digital solutions</span>
                 </li>
                 <li>
                   <span className="">✅</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Property Creater</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Property Creater</span>{' '}
                   <span className="text-gray-300">— making property buying & selling seamless</span>
                 </li>
                 <li>
                   <span className="">✅</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Education Creater</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Education Creater</span>{' '}
                   <span className="text-gray-300">— shaping tomorrow’s learners</span>
                 </li>
                 <li>
                   <span className="">✅</span>{' '}
-                  <span className="text-[#F6E7B7] font-semibold">Technology Skills Creater</span>{' '}
+                  <span className="text-[#F6E7B7]">Technology Skills Creater</span>{' '}
                   <span className="text-gray-300">
                     — equipping people with practical, job-ready skills
                   </span>
@@ -121,13 +119,13 @@ export default function AboutPage() {
                     priority
                   />
                 </div>
-                <div className="hidden md:block absolute -bottom-[0%] left-0 z-10">
+                <div className="hidden md:block absolute -bottom-[0%] left-10 z-10">
                   <Image
                     src="/images/sahil.png"
                     alt="Sahil R. Vaidya"
                     width={740}
                     height={1040}
-                    className="rounded-xl object-cover max-w-sm w-full h-[30em]"
+                    className="rounded-xl object-cover max-w-sm w-full h-[33em]"
                     priority
                   />
                 </div>
