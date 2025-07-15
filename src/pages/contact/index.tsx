@@ -53,7 +53,7 @@ export default function ContactPage() {
       {/* JOIN US SECTION */}
       <section className="w-full py-14 mt-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4 uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-bold mb-4 uppercase tracking-wide">
             JOIN US IN BUILDING THE FUTURE
           </h2>
           <p className="max-w-7xl mx-auto text-base md:text-lg font-body text-gray-200 font-normal tracking-wide mb-2">

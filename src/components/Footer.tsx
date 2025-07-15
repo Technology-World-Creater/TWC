@@ -6,7 +6,7 @@ import { Instagram, Linkedin, Youtube, X as LucideX } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="w-full bg-black text-white py-10 mt-16">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-0 px-4 md:px-0">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-8 md:gap-0 px-4 md:px-0">
         <div className="flex flex-col gap-4 w-full md:w-auto items-center md:items-start">
           <Link
             href="/"

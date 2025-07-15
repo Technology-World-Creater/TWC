@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { MoveUpRight } from 'lucide-react';
 
 interface CompanyCardProps {
   logo: string;
@@ -61,11 +62,14 @@ const CompanyCard: React.FC<CompanyCardProps> = ({
         {ctaText && ctaHref && (
           <a
             href={ctaHref}
-            className="inline-flex items-center gap-2 px-4 md:px-6 py-2 bg-[#F6E7B7] text-black font-semibold rounded-lg shadow hover:bg-yellow-300 transition w-max mx-auto md:mx-0 text-sm md:text-base"
+            className="inline-flex items-center tracking-widest underline gap-2 px-4 md:px-14 py-3 border-[1px] border-white text-white font-semibold rounded-lg shadow hover:bg-white/30 transition w-max mx-auto md:mx-0 text-sm md:text-xl"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {ctaText} <span className="text-lg md:text-xl">→</span>
+            {ctaText}{' '}
+            <span className="text-lg md:text-xl font-bold">
+              <MoveUpRight />
+            </span>
           </a>
         )}
         {status && (
