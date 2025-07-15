@@ -188,7 +188,7 @@ export default function HomePage() {
             priority
           />
         </div>
-        <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 z-10">
+        <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 z-10 pointer-events-auto">
           <div className="relative z-20 w-full">
             <h1 className="text-5xl md:text-7xl font-section-heading text-[#F6E7B7] font-bold mb-2 leading-tight">
               India&apos;s Only Multinational
@@ -202,7 +202,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/about"
-              className="inline-block border border-white text-white px-8 py-3 rounded-lg underline text-lg font-semibold hover:bg-white hover:text-black transition mt-2"
+              className="inline-block border border-white text-white px-8 py-3 rounded-lg underline text-lg font-semibold hover:bg-white/30 hover:text-white transition mt-2"
             >
               Explore
             </Link>
