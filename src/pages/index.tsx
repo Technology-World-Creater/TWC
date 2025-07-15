@@ -173,7 +173,7 @@ export default function HomePage() {
           />
         </div>
         <div className="absolute inset-0 z-0 opacity-10 flex items-center justify-center">
-          <span className="text-[16vw] font-extrabold font-serif-hero text-white/10 tracking-tighter select-none">
+          <span className="text-[16vw] font-extrabold font-section-heading text-white/10 tracking-tighter select-none">
             TWC
           </span>
         </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
         </div>
         <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 z-10">
           <div className="relative z-20 w-full">
-            <h1 className="text-5xl md:text-7xl font-serif-hero text-[#F6E7B7] font-bold mb-2 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-section-heading text-[#F6E7B7] font-bold mb-2 leading-tight">
               India&apos;s Only Multinational
             </h1>
             <h2 className="text-2xl md:text-[2.7em] font-body font-semibold text-white mb-4 tracking-wide uppercase">
@@ -218,7 +218,7 @@ export default function HomePage() {
               {/* Left: TWC, tagline, description */}
               <div className="flex-1 flex flex-col items-start justify-center text-left gap-2 min-w-[300px]">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0">
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-serif-hero font-normal text-white font-orbitron">
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-section-heading font-normal text-white font-orbitron">
                     TWC
                   </span>
                   <span className="text-base md:text-lg lg:text-2xl font-semibold text-[#F6E7B7] md:ml-2">
@@ -270,7 +270,7 @@ export default function HomePage() {
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-12 items-start">
               {/* Left: Heading and paragraphs */}
               <div className="flex-1">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-6 md:mb-8 text-left">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-6 md:mb-8 text-left">
                   WHO ARE WE ?
                 </h2>
                 <p className="text-gray-200 text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
@@ -333,7 +333,7 @@ export default function HomePage() {
           {/* OUR COMPANIES - Overlapping section */}
           <section className="relative w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <h2 className="text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-12 text-center tracking-wider">
+              <h2 className="text-5xl font-section-heading text-[#F6E7B7] font-normal mb-12 text-center tracking-wider">
                 OUR COMPANIES
               </h2>
               <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-6 w-full">
@@ -402,7 +402,7 @@ export default function HomePage() {
           {/* WHY CHOOSE US - Overlapping section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-8">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-8">
                 WHY CHOOSE US?
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -552,10 +552,10 @@ export default function HomePage() {
                       : {}),
                   }}
                 >
-                  <h2 className="text-4xl md:text-4xl lg:text-5xl font-serif-hero font-normal text-white leading-tight">
+                  <h2 className="text-4xl md:text-4xl lg:text-5xl font-section-heading font-normal text-white leading-tight">
                     INSIDE INDUSTRY:
                   </h2>
-                  <div className="text-2xl md:text-3xl lg:text-4xl font-serif-hero font-normal text-[#F6E7B7] mt-2">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-section-heading font-normal text-[#F6E7B7] mt-2">
                     EXPERT TALKS & STORIES
                   </div>
                 </div>
@@ -664,7 +664,7 @@ export default function HomePage() {
           {/* SUCCESS STORIES - Overlapping section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-8 text-center">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-8 text-center">
                 SUCCESS STORIES
               </h2>
               <div className="overflow-hidden" ref={sliderRef}>
@@ -695,7 +695,7 @@ export default function HomePage() {
           {/* CONTACT ACTIONS SECTION */}
           <section className="w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20 rounded-2xl">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-4 text-center">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-4 text-center">
                 HAVE A BOLD IDEA? <span className="text-white">LET’S MAKE IT REAL.</span>
               </h2>
               <p className="text-gray-200 text-lg md:text-xl mb-10 text-center max-w-5xl">
@@ -760,7 +760,7 @@ export default function HomePage() {
               </div>
               {/* Right: Content */}
               <div className="flex-1 basis-full md:basis-[70%] flex flex-col items-center md:items-start text-center md:text-left justify-center h-full">
-                <h2 className="text-3xl md:text-4xl font-serif-hero text-white font-normal mb-4 tracking-wide uppercase">
+                <h2 className="text-3xl md:text-4xl font-section-heading text-white font-normal mb-4 tracking-wide uppercase">
                   SUBSCRIBE TO GET UPDATES
                 </h2>
                 <div className="text-lg md:text-xl text-[#F6E7B7] font-medium mb-6">
@@ -821,7 +821,7 @@ export default function HomePage() {
           {/* FAQ SECTION - Final section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 mb-0 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-8 text-center">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-bold mb-8 text-center">
                 FAQS
               </h2>
               <div className="divide-y divide-gray-700 bg-[#18111a]/80 backdrop-blur-sm rounded-2xl border border-white/10">

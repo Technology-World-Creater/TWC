@@ -68,7 +68,7 @@ export default function AboutPage() {
               </ul>
               <Link
                 href="/companies"
-                className="border border-[#F6E7B7] text-[#F6E7B7] px-7 py-2 rounded-lg font-body text-center text-lg font-medium hover:bg-[#F6E7B7] hover:text-black transition-all duration-200"
+                className="border border-white text-white hover:bg-white/30 px-7 py-2 rounded-lg font-body text-center text-lg font-medium  hover:text-white transition-all duration-200 w-fit underline"
               >
                 Know more
               </Link>
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="w-full md:w-full flex flex-col items-end gap-4">
             {/* Name, Logo, Title */}
             <div className="flex flex-col w-full">
-              <h2 className="text-4xl md:text-7xl font-extrabold font-serif-hero tracking-wider text-white mb-2 text-center md:text-right uppercase leading-tight">
+              <h2 className="text-4xl md:text-7xl font-extrabold font-body tracking-wider text-white mb-2 text-center md:text-right uppercase leading-tight">
                 SAHIL R. VAIDYA
                 <div className="flex items-center justify-end gap-2 w-full mb-2 font-normal">
                   <Image
@@ -94,10 +94,10 @@ export default function AboutPage() {
                     height={60}
                     className="mx-auto md:mx-0"
                   />
-                  <div className="text-xl md:text-4xl font-bold font-mono tracking-normal text-white text-end md:text-right leading-tight">
+                  <div className="text-xl md:text-4xl font-bold font-body tracking-normal text-white text-end md:text-right leading-tight">
                     Founder & CEO,
                     <br />
-                    <span className="text-[#F6E7B7] text-2xl font-mono tracking-normal capitalize">
+                    <span className="text-[#F6E7B7] text-2xl font-body tracking-normal capitalize">
                       Technology World Creater Org.
                     </span>
                   </div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
           {/* Vision Row */}
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-between w-full">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] mb-4">
                 OUR VISION
               </h2>
               <Image
@@ -183,7 +183,7 @@ export default function AboutPage() {
                 height={80}
                 className="mb-4"
               />
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4">
+              <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] mb-4">
                 OUR MISSION
               </h2>
             </div>
@@ -203,7 +203,7 @@ export default function AboutPage() {
       <section className="w-full py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-end gap-8">
           <div className="flex-1 flex flex-col items-center md:items-start gap-4">
-            <h2 className="text-3xl md:text-4xl font-serif-hero text-[#F6E7B7] font-bold mb-2">
+            <h2 className="text-3xl md:text-4xl text-[#F6E7B7] font-bold mb-2">
               Meet the Visionaries Behind TWC
             </h2>
             <p className="text-gray-200 font-body text-base md:text-lg max-w-xl mb-4 text-center md:text-left">
@@ -212,7 +212,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex-1 flex flex-col items-center md:items-end gap-2">
-            <h2 className="text-3xl md:text-7xl font-serif-hero text-white font-bold mb-2 text-center md:text-right">
+            <h2 className="text-3xl md:text-7xl font-body text-white mb-2 text-center md:text-right">
               OUR TEAM
             </h2>
             <div className="flex items-center gap-2 mb-2">
@@ -223,41 +223,31 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 mt-8">
           <div className="relative flex flex-col items-center">
             <Image
+              src="/images/ourteambgimage.png"
+              alt="Team Section Background"
+              fill
+              className="absolute inset-0 w-full h-full object-center z-0 opacity-100 pointer-events-none"
+              style={{
+                objectFit: 'contain',
+                top: typeof window !== 'undefined' && window.innerWidth >= 768 ? '-60px' : '-10px',
+                transform: 'translateY(-40px)',
+              }}
+            />
+            <Image
               src="/images/team.png"
               alt="Our Team"
               width={1200}
               height={300}
               className="object-contain w-full rounded-lg z-10"
             />
-            <div
-              className="absolute bottom-0 left-0 w-full h-8 md:h-12 bg-gradient-to-t from-yellow-200/80 to-transparent rounded-b-lg z-0"
-              style={{ filter: 'blur(2px)' }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* SUCCESS STORIES SECTION */}
-      <section className="w-full py-16 bg-gradient-to-r from-[#21022E] via-[#230F3C] to-[#0E040B] relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-8">
-          <h2 className="text-4xl md:text-6xl font-serif-hero text-[#F6E7B7] font-bold mb-4 text-center drop-shadow-lg">
-            SUCCESS STORIES
-          </h2>
-          <p className="text-gray-200 font-body text-lg md:text-2xl mb-8 text-center max-w-3xl">
-            Discover how TWC has empowered businesses and individuals to achieve extraordinary
-            results. Our success stories showcase the impact of innovation, technology, and
-            strategic insight across diverse industries.
-          </p>
-          <div className="relative w-full flex justify-center">
             <Image
-              src="/images/about-1.jpg"
-              alt="Success Story"
+              src="/images/Line.png"
+              alt="Line Shadow"
               width={1200}
-              height={400}
-              className="rounded-2xl object-cover w-full max-w-4xl shadow-2xl border-4 border-[#F6E7B7] opacity-90"
+              height={48}
+              className="absolute bottom-0 left-0 w-full h-8 md:h-12 z-20 pointer-events-none"
+              style={{ filter: 'drop-shadow(0 4px 16px rgba(0,0,0,0.5)) blur(1.5px)' }}
             />
-            {/* Optional: Add a gradient overlay for effect */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl pointer-events-none" />
           </div>
         </div>
       </section>
@@ -265,7 +255,7 @@ export default function AboutPage() {
       {/* PROMISE SECTION */}
       <section className="w-full py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-6xl font-serif-hero text-[#F6E7B7] font-bold mb-4">
+          <h2 className="text-3xl md:text-6xl font-section-heading text-[#F6E7B7] font-bold mb-4">
             OUR PROMISE
           </h2>
           <p className="text-gray-200 py-6 text-base md:text-xl w-full text-center md:text-center">
@@ -278,7 +268,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/companies"
-            className="inline-block border border-[#F6E7B7] text-[#F6E7B7] px-8 py-3 rounded-full hover:bg-[#F6E7B7] hover:text-black transition font-semibold text-lg md:text-xl"
+            className="inline-block border border-white text-white px-8 py-3 rounded-lg hover:bg-white/30 hover:text-white transition font-semibold text-lg md:text-xl"
           >
             Explore Our companies
           </Link>

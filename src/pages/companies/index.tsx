@@ -82,7 +82,7 @@ export default function CompaniesPage() {
       {/* JOIN US SECTION */}
       <section className="w-full py-14 bg-black">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4 uppercase tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-bold mb-4 uppercase tracking-wide">
             JOIN US IN BUILDING THE FUTURE
           </h2>
           <p className="max-w-7xl mx-auto text-base md:text-lg font-body text-gray-200 font-normal tracking-wide mb-2">
@@ -98,7 +98,7 @@ export default function CompaniesPage() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row gap-10 items-center bg-[#18111a] rounded-2xl shadow-lg p-6 md:p-10">
           {/* Contact Form */}
           <div className="w-full md:w-1/2">
-            <h3 className="text-2xl font-serif-hero text-[#F6E7B7] mb-6">LET’S CONNECT</h3>
+            <h3 className="text-2xl font-section-heading text-[#F6E7B7] mb-6">LET’S CONNECT</h3>
             <form className="flex flex-col gap-4 w-full">
               <div className="flex flex-col sm:flex-row gap-3 w-full">
                 <input
