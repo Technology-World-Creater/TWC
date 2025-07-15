@@ -17,13 +17,20 @@
 @font-face {
   font-family: 'Petrona';
   src: url('/fonts/Petrona-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -59,10 +66,14 @@ body {
 }
 .font-section-heading {
   font-family: 'Petrona', serif;
-  font-weight: 600;
+  font-weight: 300;
 }
 .font-body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
   font-weight: 400;
 }
 

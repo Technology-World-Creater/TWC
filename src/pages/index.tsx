@@ -218,7 +218,7 @@ export default function HomePage() {
               {/* Left: TWC, tagline, description */}
               <div className="flex-1 flex flex-col items-start justify-center text-left gap-2 min-w-[300px]">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0">
-                  <span className="text-4xl md:text-5xl lg:text-6xl font-serif-hero font-normal text-white">
+                  <span className="text-4xl md:text-5xl lg:text-6xl font-serif-hero font-normal text-white font-orbitron">
                     TWC
                   </span>
                   <span className="text-base md:text-lg lg:text-2xl font-semibold text-[#F6E7B7] md:ml-2">
@@ -270,7 +270,7 @@ export default function HomePage() {
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-12 items-start">
               {/* Left: Heading and paragraphs */}
               <div className="flex-1">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-6 md:mb-8 text-left">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-6 md:mb-8 text-left">
                   WHO ARE WE ?
                 </h2>
                 <p className="text-gray-200 text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
@@ -333,7 +333,7 @@ export default function HomePage() {
           {/* OUR COMPANIES - Overlapping section */}
           <section className="relative w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <h2 className="text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-12 text-center tracking-wider">
+              <h2 className="text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-12 text-center tracking-wider">
                 OUR COMPANIES
               </h2>
               <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-6 w-full">
@@ -402,7 +402,7 @@ export default function HomePage() {
           {/* WHY CHOOSE US - Overlapping section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-8">
+              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-8">
                 WHY CHOOSE US?
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -552,10 +552,10 @@ export default function HomePage() {
                       : {}),
                   }}
                 >
-                  <h2 className="text-4xl md:text-4xl lg:text-5xl font-serif-hero font-bold text-white leading-tight">
+                  <h2 className="text-4xl md:text-4xl lg:text-5xl font-serif-hero font-normal text-white leading-tight">
                     INSIDE INDUSTRY:
                   </h2>
-                  <div className="text-2xl md:text-3xl lg:text-4xl font-serif-hero font-bold text-[#F6E7B7] mt-2">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-serif-hero font-normal text-[#F6E7B7] mt-2">
                     EXPERT TALKS & STORIES
                   </div>
                 </div>
@@ -664,7 +664,7 @@ export default function HomePage() {
           {/* SUCCESS STORIES - Overlapping section */}
           <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-8 text-center">
+              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-8 text-center">
                 SUCCESS STORIES
               </h2>
               <div className="overflow-hidden" ref={sliderRef}>
@@ -695,10 +695,10 @@ export default function HomePage() {
           {/* CONTACT ACTIONS SECTION */}
           <section className="w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20 rounded-2xl">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
-              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-bold mb-4 text-center">
+              <h2 className="text-4xl md:text-5xl font-serif-hero text-[#F6E7B7] font-normal mb-4 text-center">
                 HAVE A BOLD IDEA? <span className="text-white">LET’S MAKE IT REAL.</span>
               </h2>
-              <p className="text-gray-200 text-lg md:text-xl mb-10 text-center max-w-3xl">
+              <p className="text-gray-200 text-lg md:text-xl mb-10 text-center max-w-5xl">
                 Whether you&apos;re a startup looking for direction, a business seeking smarter
                 strategy, or a partner ready to scale innovation, we&apos;re here to make it happen.
                 Reach out and let&apos;s build something extraordinary together.
@@ -706,19 +706,37 @@ export default function HomePage() {
               <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-8 mb-8">
                 {/* Let's Talk Card */}
                 <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
-                  <span className="text-6xl mb-4">💬</span>
+                  <Image
+                    src="/images/letstalk.png"
+                    alt="Let's Talk"
+                    width={80}
+                    height={80}
+                    className="mb-4"
+                  />
                   <span className="text-2xl font-bold text-white mb-2">Let’s Talk</span>
                 </div>
                 {/* Schedule a Consultation Card */}
                 <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
-                  <span className="text-6xl mb-4">🧑‍💼</span>
+                  <Image
+                    src="/images/shedule.png"
+                    alt="Schedule a Consultation"
+                    width={80}
+                    height={80}
+                    className="mb-4"
+                  />
                   <span className="text-2xl font-bold text-white mb-2">
                     Schedule a Consultation
                   </span>
                 </div>
                 {/* Partner With Us Card */}
                 <div className="flex-1 border border-white rounded-xl p-8 flex flex-col items-center bg-black/40">
-                  <span className="text-6xl mb-4">🤝</span>
+                  <Image
+                    src="/images/partner.png"
+                    alt="Partner With Us"
+                    width={80}
+                    height={80}
+                    className="mb-4"
+                  />
                   <span className="text-2xl font-bold text-white mb-2">Partner With Us</span>
                 </div>
               </div>
@@ -726,7 +744,7 @@ export default function HomePage() {
           </section>
 
           {/* CTA + SUBSCRIBE - Overlapping section */}
-          <section className="relative w-full py-16 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
+          <section className="relative w-full py-2 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[340px] md:min-h-[420px]">
               {/* Left: Image */}
               <div className="flex-shrink-0 w-full md:w-auto md:basis-[35%] flex justify-center md:justify-start items-center">
@@ -742,13 +760,13 @@ export default function HomePage() {
               </div>
               {/* Right: Content */}
               <div className="flex-1 basis-full md:basis-[70%] flex flex-col items-center md:items-start text-center md:text-left justify-center h-full">
-                <h2 className="text-3xl md:text-5xl font-serif-hero text-white font-bold mb-4 tracking-wide uppercase">
+                <h2 className="text-3xl md:text-4xl font-serif-hero text-white font-normal mb-4 tracking-wide uppercase">
                   SUBSCRIBE TO GET UPDATES
                 </h2>
                 <div className="text-lg md:text-xl text-[#F6E7B7] font-medium mb-6">
                   Get industry insights & updates in your inbox
                 </div>
-                <div className="w-full max-w-2xl flex items-center gap-10">
+                <div className="w-full max-w-7xl flex items-center gap-10">
                   <form className="flex-1 flex items-center bg-white rounded-lg overflow-hidden shadow-lg">
                     <span className="pl-4 pr-2 text-gray-400 flex items-center">
                       <svg
