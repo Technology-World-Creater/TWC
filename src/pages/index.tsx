@@ -243,10 +243,19 @@ export default function HomePage() {
       </section>
       {/* MAIN CONTENT (scrolls above hero background) */}
       <div className="relative z-10">
-        <main className="flex-grow">
+        {/* Main background image for all main content */}
+        <Image
+          src="/images/herobackground.png"
+          alt="Main Content Background"
+          fill
+          className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none select-none"
+          style={{ objectFit: 'cover' }}
+        />
+        <main className="flex-grow relative z-10">
           {/* SOCIAL + TWC BAR - Overlapping section */}
-          <section className="relative w-full py-6 md:py-8 bg-black/90 backdrop-blur-sm border border-white/10 z-20 -mt-32">
-            <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-2xl px-6">
+          <section className="relative w-full py-6 md:py-8 border border-white/10 z-20 -mt-32">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto rounded-2xl px-6 relative z-10">
               {/* Left: TWC, tagline, description */}
               <div className="flex-1 flex flex-col items-start justify-center text-left gap-2 min-w-[300px]">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-0">
@@ -298,8 +307,9 @@ export default function HomePage() {
           </section>
 
           {/* WHO ARE WE - Overlapping section */}
-          <section className="relative w-full py-12 md:py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+          <section className="relative w-full py-12 md:py-16 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-12 items-start relative z-10">
               {/* Left: Heading and paragraphs */}
               <div className="flex-1">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-6 md:mb-8 text-left">
@@ -363,8 +373,9 @@ export default function HomePage() {
           </section>
 
           {/* OUR COMPANIES - Overlapping section */}
-          <section className="relative w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto px-4">
+          <section className="relative w-full py-12 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
               <h2 className="text-5xl font-section-heading text-[#F6E7B7] font-normal mb-12 text-center tracking-wider">
                 OUR COMPANIES
               </h2>
@@ -432,8 +443,9 @@ export default function HomePage() {
           </section>
 
           {/* WHY CHOOSE US - Overlapping section */}
-          <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto">
+          <section className="relative w-full py-16 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto relative z-10">
               <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-8">
                 WHY CHOOSE US?
               </h2>
@@ -571,8 +583,9 @@ export default function HomePage() {
           </section>
 
           {/* INSIDE INDUSTRY: EXPERT TALKS & STORIES - Overlapping section */}
-          <section className="relative w-full py-16 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto px-4">
+          <section className="relative w-full py-16 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
               <div className="w-full mx-auto py-6 flex flex-col md:flex-row items-center md:items-center justify-between gap-8">
                 {/* Left: Heading */}
                 <div
@@ -694,8 +707,9 @@ export default function HomePage() {
           </section>
 
           {/* SUCCESS STORIES - Overlapping section */}
-          <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto px-4">
+          <section className="relative w-full py-16 bg-black/30 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
               <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-8 text-center">
                 SUCCESS STORIES
               </h2>
@@ -737,8 +751,9 @@ export default function HomePage() {
           </section>
 
           {/* CONTACT ACTIONS SECTION */}
-          <section className="w-full py-12 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20 rounded-2xl">
-            <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <section className="w-full py-12 bg-black/20 border-t border-white/10 z-20 rounded-2xl">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
               <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-normal mb-4 text-center">
                 HAVE A BOLD IDEA? <span className="text-white">LET’S MAKE IT REAL.</span>
               </h2>
@@ -788,8 +803,9 @@ export default function HomePage() {
           </section>
 
           {/* CTA + SUBSCRIBE - Overlapping section */}
-          <section className="relative w-full py-2 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[340px] md:min-h-[420px]">
+          <section className="relative w-full py-2  border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[340px] md:min-h-[420px] relative z-10">
               {/* Left: Image */}
               <div className="flex-shrink-0 w-full md:w-auto md:basis-[35%] hidden md:flex justify-center md:justify-start items-center">
                 <div className="relative w-[420px] h-[420px] md:w-[440px] md:h-[420px] mx-auto md:mx-0">
@@ -863,8 +879,9 @@ export default function HomePage() {
           </section>
 
           {/* FAQ SECTION - Final section */}
-          <section className="relative w-full py-16 bg-black/95 backdrop-blur-sm border-t border-white/10 mb-0 z-20">
-            <div className="max-w-7xl mx-auto px-4">
+          <section className="relative w-full py-16 bg-black/40 border-t border-white/10 mb-0 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
               <h2 className="text-4xl md:text-5xl font-section-heading text-[#F6E7B7] font-bold mb-8 text-center">
                 FAQS
               </h2>
