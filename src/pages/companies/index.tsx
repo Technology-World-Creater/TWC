@@ -136,7 +136,7 @@ export default function CompaniesPage() {
             </form>
           </div>
           {/* Image or Visual */}
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6 mt-10 md:mt-0">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6 mt-10 md:mt-0 hidden md:flex">
             <Image
               src="/images/company0.jpg"
               alt="Let's Connect"
