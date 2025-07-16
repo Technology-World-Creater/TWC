@@ -13,23 +13,55 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function HomePage() {
   // --- Testimonial slider logic ---
-  const testimonials = [
+  const testimonials: {
+    stars: number;
+    text: string;
+    author: string;
+    avatar: string;
+    role: string;
+  }[] = [
     {
       stars: 5,
-      text: '"TWC\'s platform made it so easy to launch industry solutions. The team\'s vision and support are unmatched."',
-      author: '— Priya Sharma',
+      text: '"TWC\'s education platform made it so easy to learn industry-ready skills alongside my college degree. The mentors were supportive and the content practical!"',
+      author: 'Nidhi Kulkarni',
+      role: 'CEO, Bharat SmartTech',
+      avatar: '/images/nidhi.png',
     },
     {
       stars: 5,
-      text: '"We didn\'t just pick a tech — they became our growth partners. TWC\'s insights and agility helped us launch faster and scale smarter."',
-      author: '— Akash Mehra',
+      text: '"TWC\'s team didn\'t just guide us — they became our growth partners. Their tech strategies helped us launch faster and scale across three states in just one year!"',
+      author: 'Aditya Gahawar',
+      role: 'Founder, ASC Architects',
+      avatar: '/images/aditya.png',
     },
     {
       stars: 5,
-      text: '"TWC\'s team is super responsive and always brings fresh ideas to the table. The results speak for themselves."',
-      author: '— Rakesh Singh',
+      text: '"Joining TWC was a game-changer for my career. The real-world projects and personalized feedback helped me land my dream job in tech!"',
+      author: 'Nikhil Singh',
+      role: 'Software Engineer, Nagpur',
+      avatar: '/images/nikhil.png',
     },
-    // Add more testimonials here if needed
+    {
+      stars: 5,
+      text: '"The networking opportunities at TWC opened doors I never imagined. I connected with industry leaders who guided my entrepreneurial journey."',
+      author: 'Deepesh Agrawal',
+      role: 'CEO, InnovateTech',
+      avatar: '/images/Deepesh.png',
+    },
+    {
+      stars: 5,
+      text: '"TWC\'s hands-on workshops provided me with the confidence to tackle complex challenges in data science. I feel prepared for any role!"',
+      author: 'Sneha Joshi',
+      role: 'Data Scientist, Bangalore',
+      avatar: '/images/Sneha.png',
+    },
+    {
+      stars: 5,
+      text: '"The curriculum at TWC is incredibly relevant to current market needs. I was able to apply what I learned directly to my business and see immediate results!"',
+      author: 'Vikram Patel',
+      role: 'Business Owner, Ahmedabad',
+      avatar: '/images/Vikram.png',
+    },
   ];
   const visibleCount = 3;
   // Duplicate testimonials for seamless infinite scroll
@@ -678,13 +710,25 @@ export default function HomePage() {
                   {sliderTestimonials.map((t, idx) => (
                     <div
                       key={idx}
-                      className="bg-[#18111a]/80 backdrop-blur-sm rounded-xl p-6 shadow-lg flex flex-col gap-3 w-[300px] md:w-[400px] flex-shrink-0 border border-white/10"
+                      className="bg-[#18111a]/80 backdrop-blur-sm rounded-tl-xl rounded-br-xl px-6 py-4 shadow-lg flex flex-col gap-3 w-[300px] md:w-[470px] flex-shrink-0 border border-white/10"
                     >
                       <div className="flex gap-1 text-[#F6E7B7] text-xl">
                         {'★★★★★'.slice(0, t.stars)}
                       </div>
                       <div className="text-white font-semibold">{t.text}</div>
-                      <div className="text-gray-400 text-sm">{t.author}</div>
+                      <div className="flex items-center gap-4">
+                        <Image
+                          src={t.avatar}
+                          alt={t.author}
+                          width={56}
+                          height={56}
+                          className="w-14 h-14 rounded-full object-cover border border-gray-300"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-semibold text-white text-lg">{t.author}</span>
+                          <span className="text-gray-400 text-base mt-1">{t.role}</span>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>

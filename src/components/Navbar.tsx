@@ -23,7 +23,7 @@ export default function Navbar() {
       className="w-full bg-black text-white py-3 z-20 sticky top-0"
       style={{ background: '#000' }}
     >
-      <div className="w-[80%] mx-auto flex items-center justify-between px-4 md:px-0">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-0">
         {/* Logo */}
         <Link
           href="/"
@@ -40,12 +40,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center justify-end gap-10">
+        <div className="hidden md:flex items-center justify-end gap-3">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-8 py-2 rounded-full transition font-semibold
+              className={`py-2 rounded-full w-40  flex items-center justify-center transition font-semibold
                 ${
                   isActive(link.href)
                     ? 'bg-white text-black font-bold'
@@ -58,7 +58,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className={`border-2 border-[#F6E7B7] text-[#F6E7B7] font-bold px-6 py-2 rounded-full transition ml-4
+            className={`border-2 border-[#F6E7B7]  w-40 flex items-center justify-center text-[#F6E7B7] font-bold py-2 rounded-full transition ml-2
               ${
                 router.pathname.startsWith('/contact')
                   ? 'bg-[#F6E7B7] text-black'
