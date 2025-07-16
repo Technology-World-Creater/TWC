@@ -747,7 +747,7 @@ export default function HomePage() {
           <section className="relative w-full py-2 bg-gradient-to-b from-black/90 via-[#18111a]/90 to-black/90 backdrop-blur-sm border-t border-white/10 z-20">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 min-h-[340px] md:min-h-[420px]">
               {/* Left: Image */}
-              <div className="flex-shrink-0 w-full md:w-auto md:basis-[35%] flex justify-center md:justify-start items-center">
+              <div className="flex-shrink-0 w-full md:w-auto md:basis-[35%] hidden md:flex justify-center md:justify-start items-center">
                 <div className="relative w-[420px] h-[420px] md:w-[440px] md:h-[420px] mx-auto md:mx-0">
                   <Image
                     src="/images/update.png"
