@@ -136,13 +136,13 @@ export default function CompaniesPage() {
             </form>
           </div>
           {/* Image or Visual */}
-          <div className="w-full md:w-1/2 flex-col items-center justify-center gap-6 mt-10 md:mt-0 md:flex hidden">
+          <div className="w-full md:w-1/2 flex-col items-center justify-center gap-6 mt-10 md:mt-0 md:flex hidden h-[25em]">
             <Image
               src="/images/company0.jpg"
               alt="Let's Connect"
               width={600}
-              height={200}
-              className="rounded-xl object-cover"
+              height={900}
+              className="rounded-xl object-cover w-full h-full"
             />
           </div>
         </div>
