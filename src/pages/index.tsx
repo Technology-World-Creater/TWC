@@ -889,27 +889,27 @@ export default function HomePage() {
                 {[
                   {
                     q: 'What is Technology World Creater (TWC)?',
-                    a: 'TWC is a multinational technology analysenment company helping businesses, startups, and emerging markets unlock their full potential.',
+                    a: 'Technology World Creater (TWC) is a pioneering multinational technology analysement company, transforming industries through strategic insights and advanced digital solutions. Our company specializes in analyzing global trends, evaluating emerging technologies, and delivering data-driven intelligence. We empower businesses and individuals to make smarter, future-ready decisions across multiple technology sectors.',
                   },
                   {
                     q: 'Which industries does TWC operate in?',
-                    a: 'Agriculture, Property, Services, Education, Skills, and more.',
+                    a: 'Technology Agriculture Creater or TAC in Agri-Tech\nTechnology Education Creater or TEC in Ed-Tech\nTechnology Service Creater or TSC in Service-Tech\nTechnology Skills Creater or TSC in Skill-Tech\nTechnology Property Creater or TPC in Property-Tech',
                   },
                   {
                     q: 'What makes TWC different from other tech companies?',
-                    a: 'TWC combines deep analysis, local execution, and a global network to deliver real-world impact.',
+                    a: 'Technology World Creater (TWC) stands apart through its unique Analysement-based model that goes beyond traditional tech development. We focus on revolutionizing multiple technology sectors at a global level by deeply understanding challenges and crafting industry-specific solutions.',
                   },
                   {
                     q: 'What is Multinational Analysenment ?',
-                    a: 'This is a sample answer for demonstration purposes.',
+                    a: 'The concept of Analysement was founded by Sahil R. Vaidya, Founder & CEO of Technology World Creater (TWC). It is a transformative approach created to analyze and innovate across various global technology sectors with the goal of building scalable, high-impact digital solutions.',
                   },
                   {
                     q: 'Is TWC open to investors or funding partnerships?',
-                    a: 'Yes! We welcome bold partners who share our vision for innovation and impact.',
+                    a: 'Yes. We are actively seeking strategic investors and funding partners who share our vision of creating sustainable, technology-driven ecosystems. To explore opportunities, please visit our Investor Relations page or contact us at Info@technologyworldcreater.com',
                   },
                   {
                     q: 'How can I join the TWC team or become a partner?',
-                    a: 'This is a sample answer for demonstration purposes.',
+                    a: "Careers: Visit our Careers section to view open roles—from R&D and development to content creation and operations. (Visit Careers page).\nInternships: We offer structured internships in research, tech, and marketing.\nPartnerships: Whether you're an NGO, corporate, or academic institution, reach out via our Partner With Us form to discuss collaboration opportunities.",
                   },
                 ].map((faq, i) => (
                   <details
@@ -920,7 +920,7 @@ export default function HomePage() {
                       {faq.q}
                       <span className="ml-2 text-xl">+</span>
                     </summary>
-                    <div className="text-gray-300 mt-2 text-base pl-2 transition-all duration-300 ease-in-out group-open:opacity-100 group-open:max-h-40 opacity-0 max-h-0 overflow-hidden">
+                    <div className="text-gray-300 mt-2 text-base pl-2 transition-all duration-300 ease-in-out group-open:opacity-100 group-open:max-h-40 opacity-0 max-h-0 overflow-hidden whitespace-pre-line">
                       {faq.a}
                     </div>
                   </details>
