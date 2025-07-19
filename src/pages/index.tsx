@@ -844,8 +844,8 @@ export default function HomePage() {
                 <div className="text-lg md:text-xl text-[#F6E7B7] font-medium mb-6">
                   Get industry insights & updates in your inbox
                 </div>
-                <div className="w-full max-w-7xl flex items-center gap-10">
-                  <form className="flex-1 flex items-center bg-white rounded-lg overflow-hidden shadow-lg">
+                <div className="w-full max-w-2xl flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                  <form className="w-full flex items-center bg-white rounded-lg overflow-hidden shadow-lg">
                     <span className="pl-4 pr-2 text-gray-400 flex items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -872,7 +872,7 @@ export default function HomePage() {
                   </form>
                   <button
                     type="submit"
-                    className="bg-white border-4 text-black hover:text-white border-[#333] hover:bg-yellow-300 transition w-16 h-16 rounded-full flex items-center justify-center shadow-md -ml-4 z-10"
+                    className="bg-white border-4 text-black hover:text-white border-[#333] hover:bg-yellow-300 transition w-16 h-16 rounded-full flex items-center justify-center shadow-md z-10"
                     aria-label="Subscribe"
                   >
                     <svg
