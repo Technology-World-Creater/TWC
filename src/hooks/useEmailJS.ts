@@ -8,7 +8,7 @@ interface EmailJSConfig {
 }
 
 interface UseEmailJSReturn {
-  sendEmail: (formData: Record<string, any>) => Promise<void>;
+  sendEmail: (formData: Record<string, unknown>) => Promise<void>;
   isLoading: boolean;
   error: string | null;
   success: boolean;
@@ -20,7 +20,7 @@ export const useEmailJS = (config: EmailJSConfig): UseEmailJSReturn => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const sendEmail = async (formData: Record<string, any>) => {
+  const sendEmail = async (formData: Record<string, unknown>) => {
     setIsLoading(true);
     setError(null);
     setSuccess(false);
@@ -38,7 +38,7 @@ export const useEmailJS = (config: EmailJSConfig): UseEmailJSReturn => {
       } else {
         setError('Failed to send email. Please try again.');
       }
-    } catch (err) {
+    } catch (err: unknown) {
       console.error('EmailJS Error:', err);
       setError('Failed to send email. Please try again.');
     } finally {

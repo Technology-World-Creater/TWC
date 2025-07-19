@@ -53,8 +53,8 @@ export default function ContactForm({ title = "LET'S CONNECT", className = '' }:
 
     try {
       await sendEmail(emailData);
-    } catch (err) {
-      // console.error('Form submission error:', err);
+    } catch {
+      // handle error if needed
     }
   };
 
