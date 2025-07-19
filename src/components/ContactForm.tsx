@@ -1,8 +1,8 @@
+'use client';
 import React, { useState } from 'react';
 import { Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import { useEmailJS } from '../hooks/useEmailJS';
 import { emailJSConfig } from '../config/emailjs';
-
 interface ContactFormProps {
   title?: string;
   className?: string;
@@ -52,11 +52,9 @@ export default function ContactForm({ title = "LET'S CONNECT", className = '' }:
     };
 
     try {
-      console.log('Sending email with data:', emailData);
       await sendEmail(emailData);
-      console.log('Email sent successfully!');
     } catch (err) {
-      console.error('Form submission error:', err);
+      // console.error('Form submission error:', err);
     }
   };
 

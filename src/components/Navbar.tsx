@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -14,13 +14,12 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter();
-  const isActive = (href: string) =>
-    href === '/' ? router.pathname === '/' : router.pathname.startsWith(href);
+  const pathname = usePathname() || '';
+  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
 
   return (
     <nav
-      className="w-full bg-black text-white py-3 z-20 sticky top-0"
+      className="w-full bg-black text-white py-3 z-[100] sticky top-0"
       style={{ background: '#000' }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-0">
@@ -60,7 +59,7 @@ export default function Navbar() {
             href="/contact"
             className={`border-2 border-[#F6E7B7]  w-40 flex items-center justify-center text-[#F6E7B7] font-bold py-2 rounded-full transition ml-2
               ${
-                router.pathname.startsWith('/contact')
+                pathname.startsWith('/contact')
                   ? 'bg-[#F6E7B7] text-black'
                   : 'hover:bg-[#F6E7B7] hover:text-black'
               }
@@ -117,7 +116,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className={`bg-yellow-300 text-black font-semibold px-8 py-3 rounded-full hover:bg-yellow-400 transition text-lg ${router.pathname.startsWith('/contact') ? 'ring-2 ring-yellow-300' : ''}`}
+            className={`bg-yellow-300 text-black font-semibold px-8 py-3 rounded-full hover:bg-yellow-400 transition text-lg ${pathname.startsWith('/contact') ? 'ring-2 ring-yellow-300' : ''}`}
             onClick={() => setMenuOpen(false)}
           >
             Contact Us

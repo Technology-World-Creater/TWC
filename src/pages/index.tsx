@@ -220,7 +220,7 @@ export default function HomePage() {
             priority
           />
         </div>
-        <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 z-10 pointer-events-auto">
+        <section className="relative h-screen flex flex-col items-center justify-center text-center px-4 z-10 pointer-events-auto">
           <div className="relative z-20 w-full">
             <h1 className="text-5xl md:text-7xl font-section-heading text-[#F6E7B7] font-bold mb-2 leading-tight">
               India&apos;s Only Multinational

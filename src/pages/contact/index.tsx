@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import HeroSection from '../../components/HeroSection';
 import { Mail, MapPin, Phone, Instagram, Youtube, Linkedin } from 'lucide-react';
