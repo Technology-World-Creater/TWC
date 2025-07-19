@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../../components/HeroSection';
 import CompanyCard from '../../components/CompanyCard';
 import Image from 'next/image';
+import ContactForm from '../../components/ContactForm';
 
 const companies = [
   {
@@ -10,7 +11,7 @@ const companies = [
     title: 'Technology Agriculture Creater',
     subtitle: 'Grow | Connect | Sustain',
     description:
-      'At TAC, from a deep understanding of the challenges in traditional farming economies, we’ll build a digital marketplace where transparency, fairness, and efficiency prevail.',
+      'At TAC, from a deep understanding of the challenges in traditional farming economies, we&apos;ll build a digital marketplace where transparency, fairness, and efficiency prevail.',
     image: '/images/company1.png',
     imageAlt: 'TAC Marketplace',
     ctaText: 'Visit',
@@ -56,7 +57,7 @@ const companies = [
     title: 'Technology Education Creater',
     subtitle: 'Learn | Lead | Launch',
     description:
-      'TEC is revolutionizing learning with the world’s first global education framework built on the Analysenment Concept: a model that focuses on personalized understanding, critical thinking, and real-world application.',
+      'TEC is revolutionizing learning with the world&apos;s first global education framework built on the Analysenment Concept: a model that focuses on personalized understanding, critical thinking, and real-world application.',
     image: '/images/company5.png',
     imageAlt: 'TEC Education',
     status: 'Coming soon',
@@ -69,7 +70,7 @@ export default function CompaniesPage() {
       {/* HERO SECTION */}
       <HeroSection
         title="Our Companies"
-        description="At Technology World Creater (TWC), we believe innovation has no limits. That’s why we’ve built a family of sector-specific companies that combine technology, insight, and local impact — each designed to solve real-world challenges in its own unique way."
+        description="At Technology World Creater (TWC), we believe innovation has no limits. That's why we've built a family of sector-specific companies that combine technology, insight, and local impact — each designed to solve real-world challenges in its own unique way."
       />
 
       {/* COMPANIES LIST */}
@@ -86,8 +87,8 @@ export default function CompaniesPage() {
             JOIN US IN BUILDING THE FUTURE
           </h2>
           <p className="max-w-7xl mx-auto text-base md:text-lg font-body text-gray-200 font-normal tracking-wide mb-2">
-            TEC is revolutionizing learning with the world’s first global education framework built
-            on the Analysenment Concept: a model that focuses on personalized understanding,
+            TEC is revolutionizing learning with the world&apos;s first global education framework
+            built on the Analysenment Concept: a model that focuses on personalized understanding,
             critical thinking, and real-world application
           </p>
         </div>
@@ -97,44 +98,7 @@ export default function CompaniesPage() {
       <section className="w-full py-10 bg-gradient-to-b from-black via-[#18111a] to-black">
         <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row gap-10 items-center bg-[#18111a] rounded-2xl shadow-lg p-6 md:p-10">
           {/* Contact Form */}
-          <div className="w-full md:w-1/2">
-            <h3 className="text-2xl font-section-heading text-[#F6E7B7] mb-6">LET’S CONNECT</h3>
-            <form className="flex flex-col gap-4 w-full">
-              <div className="flex flex-col sm:flex-row gap-3 w-full">
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
-                />
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
-                />
-              </div>
-              <input
-                type="email"
-                placeholder="Email"
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 w-full"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 w-full"
-              />
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 resize-none w-full"
-              />
-              <button
-                type="submit"
-                className="bg-[#F6E7B7] text-black font-semibold py-2 rounded mt-2 hover:bg-yellow-300 transition w-full"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+          <ContactForm title="LET'S CONNECT" />
           {/* Image or Visual */}
           <div className="w-full md:w-1/2 flex-col items-center justify-center gap-6 mt-10 md:mt-0 md:flex hidden h-[25em]">
             <Image

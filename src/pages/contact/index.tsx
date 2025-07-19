@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from '../../components/HeroSection';
 import { Mail, MapPin, Phone, Instagram, Youtube, Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import ContactForm from '../../components/ContactForm';
 
 export default function ContactPage() {
   return (
@@ -57,8 +58,8 @@ export default function ContactPage() {
             JOIN US IN BUILDING THE FUTURE
           </h2>
           <p className="max-w-7xl mx-auto text-base md:text-lg font-body text-gray-200 font-normal tracking-wide mb-2">
-            TEC is revolutionizing learning with the world’s first global education framework built
-            on the Analysenment Concept: a model that focuses on personalized understanding,
+            TEC is revolutionizing learning with the world&apos;s first global education framework
+            built on the Analysenment Concept: a model that focuses on personalized understanding,
             critical thinking, and real-world application
           </p>
         </div>
@@ -68,44 +69,7 @@ export default function ContactPage() {
       <section className="w-full py-10 bg-gradient-to-b from-black via-[#18111a] to-black">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-10 items-center bg-[#18111a] rounded-2xl shadow-lg p-6 md:p-10">
           {/* Contact Form */}
-          <div className="w-full md:w-1/2">
-            <h3 className="text-2xl font-serif-hero text-[#F6E7B7] mb-6">LET’S CONNECT</h3>
-            <form className="flex flex-col gap-4 w-full">
-              <div className="flex flex-col sm:flex-row gap-3 w-full">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="flex-1 px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300"
-                />
-              </div>
-              <input
-                type="email"
-                placeholder="Email"
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 w-full"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 w-full"
-              />
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className="px-4 py-2 rounded bg-black/70 border border-gray-700 text-white font-body focus:outline-none focus:border-yellow-300 resize-none w-full"
-              />
-              <button
-                type="submit"
-                className="bg-[#F6E7B7] text-black font-semibold py-2 rounded mt-2 hover:bg-yellow-300 transition w-full"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+          <ContactForm title="LET'S CONNECT" />
           {/* Logo and Socials */}
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6 mt-10 md:mt-0">
             <Image src="/images/logo.png" alt="TWC Logo" width={480} height={80} className="mb-2" />
