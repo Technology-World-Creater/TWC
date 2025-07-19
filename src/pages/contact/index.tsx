@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../../components/HeroSection';
-import { Mail, MapPin, Phone, Instagram, Facebook, LucideX } from 'lucide-react';
+import { Mail, MapPin, Phone, Instagram, Youtube, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 
 export default function ContactPage() {
@@ -111,19 +111,37 @@ export default function ContactPage() {
             <Image src="/images/logo.png" alt="TWC Logo" width={480} height={80} className="mb-2" />
 
             <div className="flex items-center gap-4 md:gap-6">
-              <a href="#" className="hover:scale-110 transition" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/technology_world_creater/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition"
+                aria-label="Instagram"
+              >
                 <span className="inline-block rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-2 md:p-3">
                   <Instagram size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
                 </span>
               </a>
-              <a href="#" className="hover:scale-110 transition" aria-label="Facebook">
+              <a
+                href="https://www.linkedin.com/company/technology-world-creater/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition"
+                aria-label="LinkedIn"
+              >
                 <span className="inline-block rounded-full bg-[#1877F3] p-2 md:p-3">
-                  <Facebook size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
+                  <Linkedin size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
                 </span>
               </a>
-              <a href="#" className="hover:scale-110 transition" aria-label="X">
-                <span className="inline-block rounded-full bg-black p-2 md:p-3">
-                  <LucideX size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
+              <a
+                href="https://www.youtube.com/@technologyworldcreater"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition"
+                aria-label="YouTube"
+              >
+                <span className="inline-block rounded-full bg-red-600 p-2 md:p-3">
+                  <Youtube size={32} strokeWidth={1.5} className="text-white md:w-10 md:h-10" />
                 </span>
               </a>
             </div>
