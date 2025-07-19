@@ -10,6 +10,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   // existing Next.js config
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
 });
 
 export default nextConfig;
