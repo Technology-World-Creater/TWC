@@ -390,6 +390,62 @@ export default function HomePage() {
             </div>
           </section>
 
+          {/* Digital MH 2027 */}
+          <section className="relative w-full py-12 md:py-16 border-t border-white/10 z-20">
+            <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
+            <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 md:gap-12 items-center relative z-10">
+              {/* Left: Content */}
+              <div className="flex-1 flex flex-col justify-center items-start">
+                <h1 className="text-3xl font-bold text-white mb-2 text-left">
+                  Mission <span className="text-[#F6E7B7]">Digital Maharashtra 2027</span>
+                </h1>
+                <p className="text-[#F6E7B7] text-lg md:text-xl mb-6 text-left">
+                  India&apos;s digital Future begins here
+                </p>
+                <p className="text-gray-200 text-base md:text-lg mb-8 leading-relaxed text-left">
+                  Digital Maharashtra 2027 is a visionary mission to transform Maharashtra into a
+                  digitally empowered, globally competitive, and innovation-driven state by the year
+                  2027. Rooted in the values of progress, inclusivity, and technology-led growth,
+                  the initiative aims to bridge the gap between citizens, businesses, government,
+                  and global opportunities.
+                </p>
+                <Link
+                  href={'https://digitalmh2027.technologyworldcreater.com/'}
+                  target="_blank"
+                  className="border flex items-center gap-2 border-white text-white px-8 py-3 rounded-lg underline text-lg font-semibold hover:bg-white/30 hover:text-white transition mt-2"
+                >
+                  Explore More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2 transform -rotate-45"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
+              {/* Right: Image */}
+              <div className="flex-1 flex justify-center items-center p-4">
+                <div className="bg-white rounded-xl px-4 py-16 shadow-lg">
+                  <Image
+                    src="/images/MH.png"
+                    width={500}
+                    height={500}
+                    alt="Digital Maharashtra 2027 Logo"
+                    className="max-w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* OUR COMPANIES - Overlapping section */}
           <section className="relative w-full py-12 border-t border-white/10 z-20">
             <div className="absolute inset-0 bg-black/30 z-0 pointer-events-none" />
@@ -606,15 +662,7 @@ export default function HomePage() {
             <div className="max-w-7xl mx-auto px-4 relative z-10">
               <div className="w-full mx-auto py-6 flex flex-col md:flex-row items-center md:items-center justify-between gap-8">
                 {/* Left: Heading */}
-                <div
-                  className="w-full md:w-auto text-left mb-2 md:mb-5"
-                  style={{
-                    width: '100%',
-                    ...(typeof window !== 'undefined' && window.innerWidth >= 768
-                      ? { width: '40%' }
-                      : {}),
-                  }}
-                >
+                <div className="w-full md:w-auto text-left mb-2 md:mb-5 md:w-2/5">
                   <h2 className="text-4xl md:text-4xl lg:text-5xl font-section-heading font-normal text-white leading-tight">
                     INSIDE INDUSTRY:
                   </h2>
@@ -623,15 +671,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 {/* Right: Description */}
-                <div
-                  className="w-full md:w-auto flex flex-col items-start md:items-start gap-2"
-                  style={{
-                    width: '100%',
-                    ...(typeof window !== 'undefined' && window.innerWidth >= 768
-                      ? { width: '60%' }
-                      : {}),
-                  }}
-                >
+                <div className="w-full md:w-auto flex flex-col items-start md:items-start gap-2 md:w-3/5">
                   <div className="text-sm md:text-base font-semibold text-[#F6E7B7]">
                     Explore powerful conversations, bold ideas, and industry-shaping
                     insights—straight from the minds of changemakers.

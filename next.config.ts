@@ -14,6 +14,7 @@ module.exports = withBundleAnalyzer({
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
 });
 
 export default nextConfig;
